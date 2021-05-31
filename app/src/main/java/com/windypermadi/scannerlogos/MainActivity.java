@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void popupBerhasil(String idreservasi_ibadah, String nama_kota, String nama_ibadah, String nama_jenis_ibadah, String jam, String jumlah_reservasi, String tgl_reservasi, String nama_orang) {
+    private void popupBerhasil(String barcode, String nama_kota, String nama_ibadah, String nama_jenis_ibadah, String jam, String jumlah_reservasi, String tgl_reservasi, String nama_orang) {
         customProgress.hideProgress();
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
         LayoutInflater inflater = getLayoutInflater();
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         text_jenis.setText(nama_jenis_ibadah);
         text_jam.setText(jam);
         dialogView.findViewById(R.id.text_ok).setOnClickListener(v -> {
-            ubahVerifikasi(idreservasi_ibadah);
+            ubahVerifikasi(barcode);
             alertDialog.dismiss();
         });
         alertDialog.show();
