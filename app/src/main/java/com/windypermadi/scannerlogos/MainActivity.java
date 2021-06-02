@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void ubahVerifikasi(String idreservasi_ibadah) {
         AndroidNetworking.get(Config.url + "scan/ubahVerifikasi.php")
-                .addQueryParameter("idreservasi_ibadah", idreservasi_ibadah)
+                .addQueryParameter("barcode", idreservasi_ibadah)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
