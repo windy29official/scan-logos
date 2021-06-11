@@ -18,4 +18,9 @@
     <color name="grey">#AAAAAA</color>
     <color name="greyLight">#E6E6E6</color>
     <color name="transparan">#00FFFFFF</color>
+    <color name="colorPrimary">#ffbd9b</color>
+    <color name="colorPrimaryDark">#ffd8cc</color>
+    <color name="colorPrimaryPeach">#f98b88</color>
+    <color name="colorAccent">#ffeedb</color>
+    <color name="colorDark">#0a1d37</color>
 </resources>
